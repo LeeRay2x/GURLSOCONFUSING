@@ -1,6 +1,6 @@
-from Customer import customerList, newCustomer, manageCustomer
-from Menu import menuList, showMenu, manageMenu
-from Order import createOrder, completedOrders
+from customer import customerList, newCustomer, deleteCustomer
+from menu import menuList, showMenu, editMenu
+from order import createOrder, completedOrders
 from pay_and_deliver import (
     processPayment,
     createDelivery,
@@ -24,7 +24,7 @@ def customer_menu():
             newCustomer()
 
         elif choice == "2":
-            manageCustomer()
+            deleteCustomer()
 
         elif choice == "3":
             if len(customerList) == 0:
@@ -54,7 +54,7 @@ def menu_management():
             showMenu()
 
         elif choice == "2":
-            manageMenu()
+            editMenu()
 
         elif choice == "3":
             break
