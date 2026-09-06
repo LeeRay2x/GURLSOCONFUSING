@@ -128,6 +128,8 @@ def deleteItem():                                       # delete the menu
             break
 
     if not item_found:
-        print("Invalid Option! Item ID not found.")
+        print("Invalid Option! Item ID not found
+
+    sdfgh
 
 
