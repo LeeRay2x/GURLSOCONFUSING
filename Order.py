@@ -12,10 +12,11 @@ class OrderItem:
         self.quantity = quantity
 
     def get_subtotal(self):
-        return self.menu_item.price * self.quantity
+        price = float(self.menu_item.price)     # menu.py sometimes stores price as text
+        return price * self.quantity
 
     def __str__(self):
-        return f"{self.quantity}x {self.menu_item.menuName} - PHP {self.get_subtotal():.2f}"
+        return f"{self.quantity}x {self.menu_item.menuName} - PHP {self.get_subtotal()}"
 
 class Order:
     def __init__(self, customer):
