@@ -1,5 +1,5 @@
-from customer import customerList, newCustomer, manageCustomer
-from menu import menuList, showMenu, manageMenu
+from Customer import customerList, newCustomer, manageCustomer
+from Menu import menuList, showMenu, manageMenu
 from Order import createOrder, completedOrders
 from pay_and_deliver import (
     processPayment,
